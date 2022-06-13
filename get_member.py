@@ -1,6 +1,5 @@
 #!/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-
-# Modules Needed
+"""Modules Needed"""
 # import pprint
 import requests
 
@@ -52,4 +51,3 @@ print("User ID #: "+str(r_user.json()['user']['id']))
 print("User Role: "+r_user.json()['role'])
 print("Organization: "+r_user.json()['organization']['login'])
 print("Organization ID #: "+str(r_user.json()['organization']['id']))
-
