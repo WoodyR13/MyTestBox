@@ -1,10 +1,5 @@
-#!/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-""" Modules needed to run the program,
-    json to allow the use of json within my python code,
-    pprint to format my data,
-    requests to allow me to make API calls
-    """
-# Modules Needed
+# !/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+""" Modules needed to run the program"""
 import json
 import pprint
 import requests
@@ -114,4 +109,3 @@ while True:
         # [204] Status Code is a Successful Deletion
         # If user is not in the organization but has been sent an invitation, that will be revoked
         break
-        
