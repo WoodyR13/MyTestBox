@@ -1,6 +1,5 @@
-#!/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-
-# Modules Needed
+# !/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+"""Modules Needed"""
 import json
 import pprint
 import requests
