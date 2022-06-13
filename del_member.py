@@ -1,6 +1,6 @@
-#!/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+# !/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
 
-# Modules Needed
+"""Modules Needed"""
 import requests
 
 # Credentials
@@ -38,4 +38,3 @@ while True:
 
 # [204] Status Code is a Successful Deletion
 # If user is not in the organization but has been sent an invitation, that will be revoked
-
