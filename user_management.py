@@ -1,5 +1,9 @@
 #!/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-
+""" Modules needed to run the program,
+    json to allow the use of json within my python code,
+    pprint to format my data,
+    requests to allow me to make API calls
+    """
 # Modules Needed
 import json
 import pprint
@@ -34,8 +38,8 @@ NEW_UI = json.dumps({"email": 'wroussea1977@gmail.com',
 
 # Prompt to find out what kind of API request should be called per your need
 while True:
-    choice = input('Would you like to "view" organizational data, "invite" a new member, or "delete" a new member?\n'
-                   'Please enter view, invite, or delete: ')
+    choice = input('Would you like to "view" organizational data, "invite" a new member, '
+                   'or "delete" a new member?\n''Please enter view, invite, or delete: ')
 
     if choice in ("View", "view"):
         # GET Request of the Organizations Members/Teams Data / Specific User
@@ -84,14 +88,15 @@ while True:
             # If anything else is entered you will be asked to re-enter a proper option
             if Confirmation not in ('Y', 'y', 'N', 'n'):
                 print("Invalid Option, Try Again.\n")
-                
+
         # Exit code [0] or a Response [201] means the invitation was sent successfully
         break
 
     if choice in ("Delete", "delete"):
         # Removes a User from an Organization/Team with a confirmation prompt
         while True:
-            Confirmation = input('Are you sure you want to remove this user from the Organization? Y/N\n')
+            Confirmation = input('Are you sure you want to remove this user from the Organization?'
+                                 ' Y/N\n')
 
             # If Y/y is entered the deletion of the user will proceed
             if Confirmation in ('Y', 'y'):
