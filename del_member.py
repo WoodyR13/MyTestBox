@@ -2,7 +2,7 @@
 """Modules Needed"""
 import requests
 
-# Credentials
+# Authentication Credentials
 USERNAME = 'wrousseau95'
 API_TOKEN = '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'
 
