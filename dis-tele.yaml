@@ -1,0 +1,4 @@
+telemetryEnabled:
+    description: 'Set to `false` to disable telemetry'
+    required: false
+    default: 'true'
