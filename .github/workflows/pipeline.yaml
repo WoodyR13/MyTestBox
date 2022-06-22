@@ -132,8 +132,8 @@ jobs:
         run: |
           sam package \
             --s3-bucket ${TESTING_ARTIFACTS_BUCKET} \
-            --region ${TESTING_REGION} \
             --output-template-file packaged-testing.yaml
+        # region ${TESTING_REGION} \ (remove this add under s3 after test)
 
       - uses: actions/upload-artifact@v2
         with:
