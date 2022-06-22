@@ -131,7 +131,7 @@ jobs:
       - name: Upload artifacts to testing artifact buckets
         run: |
           sam package \
-            --s3-bucket ${TESTING_ARTIFACTS_BUCKET} 
+            --s3-bucket ${TESTING_ARTIFACTS_BUCKET} \
         #   --region ${TESTING_REGION} \
         #   --output-template-file packaged-testing.yaml
 
