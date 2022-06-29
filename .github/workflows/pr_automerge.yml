@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: 
       - main
+  workflow_run:
+    workflows: [unit-test]
+    types: 
+      - completed
     
 jobs:
   pr-automerge:
