@@ -1,4 +1,4 @@
-name: Pylint
+name: unit_testing
 
 on:
   push:
