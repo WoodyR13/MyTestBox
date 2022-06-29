@@ -3,7 +3,7 @@
 import requests
 
 # Authentication Credentials
-USERNAME = 'wrousseau95
+USERNAME = 'wrousseau95'
 API_TOKEN = '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'
 
 # Base Organization URL
